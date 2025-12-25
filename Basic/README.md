@@ -49,6 +49,14 @@
    - Tích hợp các concepts từ các bài học trước
    - Xử lý document editing workflow với LangGraph
 
+### 9. Build a PDF RAG Agent with LangGraph and Gemini
+   - Xây dựng RAG (Retrieval-Augmented Generation) Agent với PDF documents
+   - Tích hợp Chroma vector database để lưu trữ và tìm kiếm documents
+   - Sử dụng LangGraph để quản lý workflow: retrieve → tool call → generate response
+   - Tích hợp Google Gemini model với tool calling
+   - Xử lý PDF documents với PyPDFLoader và text splitting
+   - Tạo interactive Q&A system cho healthcare documents
+
 ## 🚀 Cài Đặt
 
 ### Yêu Cầu
@@ -92,6 +100,9 @@
 - `ipykernel>=6.0.0` - IPython kernel for Jupyter
 - `python-dotenv>=1.0.0` - Environment variable management
 - `langchain-google-genai>=1.0.0` - Google GenAI integration for LangChain
+- `langchain-community>=0.0.20` - Community integrations (PDF loader, etc.)
+- `langchain-chroma>=0.1.0` - Chroma vector database integration
+- `langchain-huggingface>=0.0.1` - HuggingFace embeddings integration
 - `rich>=13.0.0` - Rich text and beautiful formatting in terminal
 
 ## 📝 Cấu Trúc Project
@@ -106,6 +117,9 @@ Basic/
 ├── 6.State-Based Conversational AI Tutorial.ipynb
 ├── 7.LangGraph Tool Nodes Explained.ipynb
 ├── 8.Build an AI Document Editing Agent (Drafter) with LangGraph.ipynb
+├── 9.Build a PDF RAG Agent with LangGraph and Gemini.ipynb
+├── data/
+│   └── Healthcare.pdf                    # Sample PDF document for RAG
 ├── requirements.txt
 ├── .env.example
 ├── README.md
